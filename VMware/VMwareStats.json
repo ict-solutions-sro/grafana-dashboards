@@ -26,7 +26,7 @@
   "gnetId": 11243,
   "graphTooltip": 0,
   "id": 40,
-  "iteration": 1646495889633,
+  "iteration": 1646495976145,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -1256,7 +1256,6 @@
         }
       ],
       "title": "Host memory usage %",
-      "transparent": true,
       "type": "timeseries"
     },
     {
@@ -1393,32 +1392,7 @@
           },
           "unit": "hertz"
         },
-        "overrides": [
-          {
-            "__systemRef": "hideSeriesFrom",
-            "matcher": {
-              "id": "byNames",
-              "options": {
-                "mode": "exclude",
-                "names": [
-                  "CASTE_TS"
-                ],
-                "prefix": "All except:",
-                "readOnly": true
-              }
-            },
-            "properties": [
-              {
-                "id": "custom.hideFrom",
-                "value": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": true
-                }
-              }
-            ]
-          }
-        ]
+        "overrides": []
       },
       "gridPos": {
         "h": 8,
@@ -1811,12 +1785,8 @@
       {
         "current": {
           "selected": false,
-          "text": [
-            "All"
-          ],
-          "value": [
-            "$__all"
-          ]
+          "text": "All",
+          "value": "$__all"
         },
         "datasource": {
           "type": "prometheus",
@@ -1846,12 +1816,8 @@
         "allValue": "",
         "current": {
           "selected": false,
-          "text": [
-            "All"
-          ],
-          "value": [
-            "$__all"
-          ]
+          "text": "All",
+          "value": "$__all"
         },
         "datasource": {
           "type": "prometheus",
@@ -1880,12 +1846,8 @@
       {
         "current": {
           "selected": false,
-          "text": [
-            "All"
-          ],
-          "value": [
-            "$__all"
-          ]
+          "text": "All",
+          "value": "$__all"
         },
         "datasource": {
           "type": "prometheus",
@@ -1934,6 +1896,6 @@
   "timezone": "browser",
   "title": "VMware Stats",
   "uid": "q1yCDNbWz",
-  "version": 8,
+  "version": 12,
   "weekStart": ""
 }
