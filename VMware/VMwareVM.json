@@ -26,7 +26,7 @@
   "gnetId": 10076,
   "graphTooltip": 1,
   "id": 38,
-  "iteration": 1646493727248,
+  "iteration": 1646494364499,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -286,7 +286,6 @@
       "type": "stat"
     },
     {
-      "datasource": {},
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -357,7 +356,7 @@
             "uid": "jSZ2fkf7k"
           },
           "exemplar": true,
-          "expr": "vmware_vm_power_state{vm_name=~\"$vm\"}==1",
+          "expr": "vmware_vm_power_state{vm_name=~\"$vm\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -2147,8 +2146,8 @@
       {
         "current": {
           "selected": false,
-          "text": "Prometheus",
-          "value": "Prometheus"
+          "text": "Dashboard1",
+          "value": "Dashboard1"
         },
         "hide": 2,
         "includeAll": false,
@@ -2165,9 +2164,9 @@
       },
       {
         "current": {
-          "selected": true,
-          "text": "CASTE_TS",
-          "value": "CASTE_TS"
+          "selected": false,
+          "text": "CASTE_AD",
+          "value": "CASTE_AD"
         },
         "definition": "label_values(vm_name)",
         "hide": 0,
@@ -2192,7 +2191,7 @@
     ]
   },
   "time": {
-    "from": "now-5m",
+    "from": "now-3h",
     "to": "now"
   },
   "timepicker": {
@@ -2224,6 +2223,6 @@
   "timezone": "browser",
   "title": "VMware VM",
   "uid": "Sl3uaY2Zk",
-  "version": 14,
+  "version": 18,
   "weekStart": ""
 }
